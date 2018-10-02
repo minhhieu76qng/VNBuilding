@@ -545,14 +545,14 @@ body{
 .slider-bar .slick-dots{
 	bottom: 30px;
 }
-.slider-bar .slick-dots li{
+.slick-dots li{
 	margin: 2px;
 }
-.slider-bar .slick-dots li.slick-active button:before{
+.slick-dots li.slick-active button:before{
 	background-color: white;
 	opacity: 1;
 }
-.slider-bar .slick-dots li button:before{
+.slick-dots li button:before{
 	content: '';
 	background-color: transparent;
 	border: 2px solid white;
@@ -562,7 +562,7 @@ body{
 	opacity: 1;
 }
 
-.slick-slider .slick-arrow{
+.slick-arrow{
 	text-align: center;
 	width: 40px;
 	height: 40px;
@@ -576,11 +576,11 @@ body{
 	cursor: pointer;
 }
 
-.slick-slider .slick-arrow.custom-slick-next{
+.slick-arrow.custom-slick-next{
 	right: 15px;
 }
 
-.slick-slider .slick-arrow.custom-slick-prev{
+.slick-arrow.custom-slick-prev{
 	left: 15px;
 }
 .slick-arrow .arrow-prev, .slick-arrow .arrow-next{
@@ -790,4 +790,52 @@ form button{
 .brand{
 	background-color: #f9f9f9;
 	padding: 50px 0;
+}
+.brand .columns{
+	margin-left: -25px;
+	margin-right: -25px;
+}
+.brand .item{
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+.brand .brand-lable:before{
+	content: '';
+	padding-top: 60%;
+	display: block;
+}
+.brand .brand-lable{
+	position: relative;
+	border: 3px solid #edecec;
+}
+.link-fullbox{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.img-fullbox{
+	position: absolute;
+	max-width: 100%;
+	object-fit: cover;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.slider-brand .slick-arrow{
+	width: 15px;
+	height: 20px;
+	background-color: #D1CFCF;
+}
+.slider-brand .slick-arrow [class*="arrow-"]{
+	line-height: 20px;
+}
+.slider-brand .custom-slick-prev{
+	left: 25px;
+}
+.slider-brand .custom-slick-next{
+	right: 22px;
 }
